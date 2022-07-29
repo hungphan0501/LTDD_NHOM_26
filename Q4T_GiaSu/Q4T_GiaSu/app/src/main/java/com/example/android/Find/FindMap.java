@@ -34,13 +34,13 @@ public class FindMap extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         google_Map=googleMap;
-        LatLng sydney=new LatLng(16.080510,108.213720);
-        google_Map.addMarker(new MarkerOptions().position(sydney).title("Trần Anh Quân"));
+        LatLng sydney=new LatLng(10.871472401416693, 106.79000535285431);
+        google_Map.addMarker(new MarkerOptions().position(sydney).title("Phan Văn Hùng"));
 
-        LatLng sydney1=new LatLng(16.077500,108.214470);
-        google_Map.addMarker(new MarkerOptions().position(sydney1).title("Huỳnh Văn Thịnh"));
+        LatLng sydney1=new LatLng(10.850608146084644, 106.76586923324291);
+        google_Map.addMarker(new MarkerOptions().position(sydney1).title("Nguyễn Ngọc Hiếu"));
 
-        LatLng sydney2=new LatLng(16.076870,108.213360);
-        google_Map.addMarker(new MarkerOptions().position(sydney2).title("Trường SPKT Đà Nẵng"));
+        LatLng sydney2=new LatLng(10.829910196000462, 106.72034369749014);
+        google_Map.addMarker(new MarkerOptions().position(sydney2).title("Trần VŨ Lam"));
     }
 }

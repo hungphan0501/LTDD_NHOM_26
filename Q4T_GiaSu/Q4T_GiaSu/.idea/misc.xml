@@ -125,6 +125,8 @@
         <entry key="..\:/Users/asus/Downloads/Q4T_GiaSu/app/src/main/res/layout/item_mess.xml" value="0.184375" />
         <entry key="..\:/Users/asus/Downloads/Q4T_GiaSu/app/src/main/res/layout/item_post.xml" value="0.184375" />
         <entry key="..\:/Users/asus/Downloads/Q4T_GiaSu/app/src/main/res/layout/item_teacheruser.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/hungp/.gradle/caches/transforms-3/4ecd700c773cf5624732e3577602f1ea/transformed/appcompat-1.3.1/res/layout/support_simple_spinner_dropdown_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/hungp/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/hungp/Desktop/Interface_source/1.SourceCode/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/drawable/ic_backk.xml" value="0.149" />
         <entry key="..\:/Users/hungp/Desktop/Interface_source/1.SourceCode/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_create.xml" value="0.22735507246376813" />
         <entry key="..\:/Users/hungp/Desktop/Interface_source/1.SourceCode/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_createteacher.xml" value="0.22735507246376813" />
@@ -142,6 +144,22 @@
         <entry key="..\:/Users/hungp/Desktop/Interface_source/1.SourceCode/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_profile_user.xml" value="0.264" />
         <entry key="..\:/Users/hungp/Desktop/Interface_source/1.SourceCode/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_user2.xml" value="0.264" />
         <entry key="..\:/Users/hungp/Desktop/Interface_source/1.SourceCode/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/fragment_listteacherall.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_email.xml" value="0.1490036231884058" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_find.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_find1.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_find2.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_home.xml" value="0.15670289855072464" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_list.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_mess2.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_profile.xml" value="0.20018115942028986" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_profile1.xml" value="0.25679347826086957" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/activity_user2.xml" value="0.23278985507246377" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/fragment_list.xml" value="0.24139492753623187" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/fragment_list2.xml" value="0.24139492753623187" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/fragment_list3.xml" value="0.1490036231884058" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/fragment_listroomall.xml" value="0.26766304347826086" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/fragment_photo.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/hungp/Desktop/LTDD_NHOM_26/Q4T_GiaSu/Q4T_GiaSu/app/src/main/res/layout/item_classlist.xml" value="0.15625" />
         <entry key="..\:/android/GiaSu/app/src/main/res/drawable-anydpi/ic_back.xml" value="0.17735042735042736" />
         <entry key="..\:/android/GiaSu/app/src/main/res/drawable-v24/border_line.xml" value="0.1751054852320675" />
         <entry key="..\:/android/GiaSu/app/src/main/res/drawable-v24/box.xml" value="0.1751054852320675" />

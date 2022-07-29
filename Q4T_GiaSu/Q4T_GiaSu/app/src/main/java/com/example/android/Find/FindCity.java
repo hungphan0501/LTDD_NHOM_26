@@ -54,6 +54,10 @@ public class FindCity extends Fragment {
         monhocList.add("Văn");
         monhocList.add("Sử");
         monhocList.add("Địa");
+        monhocList.add("Tiếng Anh");
+        monhocList.add("Sinh");
+        monhocList.add("GDCD");
+        monhocList.add("Tin học");
         ArrayAdapter monhocAdapter=new ArrayAdapter(getActivity(),R.layout.support_simple_spinner_dropdown_item,monhocList);
         monhocAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sprmonhoc.setAdapter(monhocAdapter);
@@ -119,13 +123,13 @@ public class FindCity extends Fragment {
                                 fragment_finduser.setArguments(bundle);
                                 replaceFragment4(fragment_finduser);
                             } else {
-                                Toast.makeText(getActivity(), "Thông tin tìm kiếm không có", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "Tên gia sư không chính xác! Bạn có thể tìm kiếm theo lớp và môn học!", Toast.LENGTH_SHORT).show();
                             }
                         }
 
                         @Override
                         public void onFailure(Call<List<user>> call, Throwable t) {
-                            Toast.makeText(getActivity(), "Thông tin tìm kiếm không có", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), "Tên gia sư không chính xác! Bạn có thể tìm kiếm theo lớp và môn học!", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }

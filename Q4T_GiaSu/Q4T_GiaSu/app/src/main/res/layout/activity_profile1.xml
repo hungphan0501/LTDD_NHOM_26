@@ -14,7 +14,7 @@
     <ImageView
         android:id="@+id/editText8"
         android:layout_width="match_parent"
-        android:layout_height="186dp"
+        android:layout_height="187dp"
         android:background="@drawable/box_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -222,7 +222,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="850dp"
+            android:layout_height="670dp"
             android:layout_marginTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -553,7 +553,7 @@
                 android:layout_centerInParent="true"
                 android:layout_marginTop="30dp"
                 android:backgroundTint="#35A1E9"
-                android:text="TRAO ĐỔI"
+                android:text="Xem Chi Tiết"
                 android:textSize="20sp" />
 
 

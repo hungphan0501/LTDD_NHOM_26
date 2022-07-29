@@ -24,6 +24,8 @@ import com.example.android.get_student;
 import com.example.android.giasu.Fragment_home;
 import com.example.android.giasu.Login;
 import com.example.android.giasu.R;
+import com.example.android.mess.MessFragment2;
+import com.example.android.mess.messFragment;
 import com.example.android.tutar;
 
 import java.util.ArrayList;
@@ -49,8 +51,6 @@ public class RoomFragment1 extends Fragment {
     public RoomFragment1() {
     }
 
-    ;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -71,8 +71,7 @@ public class RoomFragment1 extends Fragment {
 //        btn_traoDoi.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                replaceFragment4(new Fragment_home());
-//
+//                replaceFragment4(new MessFragment2());
 //            }
 //        });
 
@@ -80,7 +79,10 @@ public class RoomFragment1 extends Fragment {
         Bundle bundle=getArguments();
         ArrayList<Room1> listRoom1 = (ArrayList<Room1>) bundle.getSerializable("data");;
         roomAdapter1 = new RoomAdapter1(listRoom1,room1);
+
         rcvRoom1.setAdapter(roomAdapter1);
+
+
         return v;
     }
 

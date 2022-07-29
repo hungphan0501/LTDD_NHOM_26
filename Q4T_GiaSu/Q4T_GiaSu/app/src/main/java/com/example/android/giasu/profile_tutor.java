@@ -18,6 +18,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.android.Retrofig2.APIUtils;
 import com.example.android.Retrofig2.DataClient;
 import com.example.android.Subject;
+import com.example.android.classlist.Fragment_manage;
 import com.example.android.get_student;
 import com.example.android.profile_static;
 import com.example.android.tutar;
@@ -183,6 +184,12 @@ public class profile_tutor extends Fragment {
             @Override
             public void onClick(View v) {
                 replaceFragment4(new Fragment_profile()); 
+            }
+        });
+        btn_contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                replaceFragment4(new Fragment_manage());
             }
         });
 //        upload1.setOnClickListener(new View.OnClickListener() {

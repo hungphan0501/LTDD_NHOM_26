@@ -5,6 +5,7 @@ import com.example.android.Find.user;
 import com.example.android.Subject;
 import com.example.android.classlist.Room;
 import com.example.android.classlist.my_post;
+import com.example.android.classlist.my_post_home;
 import com.example.android.classlist1.Room1;
 import com.example.android.get_student;
 import com.example.android.teacherclass.TeacherClass;
@@ -54,6 +55,11 @@ public interface DataClient {
     @POST("get_my_post.php")
     Call<List<my_post>> get_my_post(@Field("id") String id);
     @FormUrlEncoded
+
+    @POST("get_my_post_home.php")
+    Call<List<my_post_home>> get_my_post_home(@Field("id") String id);
+    @FormUrlEncoded
+
     @POST("delete_lesson.php")
     Call<String> delete_my_post(@Field("lesson_detail_id") String lesson_detail_id);
 
@@ -94,6 +100,14 @@ public interface DataClient {
     Call<List<tutar>> get_tutor (@Field("id") String id);
 
     @FormUrlEncoded
+    @POST("get_tutor.php")
+    Call<List<tutar>> get_tutor_home (@Field("id") String id);
+
+    @FormUrlEncoded
+    @POST("get_id_tutor.php")
+    Call<List<Account>> get_id_user (@Field("id") String id);
+
+    @FormUrlEncoded
     @POST("get_list_subjects.php")
     Call<List<Subject>> get_list_subjects (@Field("id") String id);
 
@@ -112,4 +126,6 @@ public interface DataClient {
             ,@Field("address") String address
             ,@Field("id") String id
             ,@Field("dob") String dob);
+
+
 }

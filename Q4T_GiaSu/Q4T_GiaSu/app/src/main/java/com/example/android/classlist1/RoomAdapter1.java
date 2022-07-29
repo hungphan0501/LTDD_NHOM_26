@@ -3,6 +3,7 @@ package com.example.android.classlist1;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -56,6 +57,7 @@ public class RoomAdapter1 extends RecyclerView.Adapter<RoomAdapter1.UserViewHold
     public class UserViewHolder1 extends RecyclerView.ViewHolder{
 
         private TextView tvname,tvsubject,tvmoney,tvarea,tvonline;
+        Button btn_traoDoi;
 
         public UserViewHolder1(@NonNull View itemView) {
             super(itemView);
@@ -64,6 +66,7 @@ public class RoomAdapter1 extends RecyclerView.Adapter<RoomAdapter1.UserViewHold
             tvmoney = itemView.findViewById(R.id.txtmoney);
             tvarea = itemView.findViewById(R.id.txtarea);
             tvonline = itemView.findViewById(R.id.txtonline);
+            btn_traoDoi = itemView.findViewById(R.id.btn_traoDoi12);
         }
     }
 }
