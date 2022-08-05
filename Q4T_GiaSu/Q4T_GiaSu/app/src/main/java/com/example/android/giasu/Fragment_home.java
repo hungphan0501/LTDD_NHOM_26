@@ -153,6 +153,9 @@ public class Fragment_home extends Fragment {
     private void replaceFragment2(Fragment fragment) {
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.replace(R.id.rcv_user2, fragment).commit();
+    }   private void replaceFragment4(Fragment fragment) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.main, fragment).commit();
     }
 
     private void replaceFragment3(Fragment fragment) {
@@ -160,10 +163,7 @@ public class Fragment_home extends Fragment {
         transaction.replace(R.id.rcv_user3, fragment).commit();
     }
 
-    private void replaceFragment4(Fragment fragment) {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.main, fragment).commit();
-    }
+
 
     private List<Photo> getListPhoto() {
         List<Photo> list = new ArrayList<>();

@@ -3,7 +3,7 @@ package com.example.android.classlist;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,12 +15,12 @@ import java.util.List;
 
 public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.UserViewHolder> {
     private List<Room> mListRoom;
-    private Room room;
+    private interfaceListPost interfaceListPost;
 
 
-    public RoomAdapter(List<Room> mListRoom, Room room) {
+    public RoomAdapter(List<Room> mListRoom, interfaceListPost room) {
         this.mListRoom = mListRoom;
-        this.room = room;
+        this.interfaceListPost= interfaceListPost;
         notifyDataSetChanged();
     }
 
@@ -43,6 +43,12 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.UserViewHolder
         holder.tvmoney.setText(room.getFee());
         holder.tvarea.setText(room.getAddress());
         holder.tvonline.setText(room.getMethod());
+        holder.rlt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                interfaceListPost.onItemClick(room);
+            }
+        });
     }
 
 
@@ -57,6 +63,7 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.UserViewHolder
     public class UserViewHolder extends RecyclerView.ViewHolder {
 
         private TextView tvname, tvsubject, tvmoney, tvarea, tvonline;
+        private RelativeLayout rlt;
 
         public UserViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -66,6 +73,7 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.UserViewHolder
             tvmoney = itemView.findViewById(R.id.txtmoney);
             tvarea = itemView.findViewById(R.id.txtarea);
             tvonline = itemView.findViewById(R.id.txtonline);
+            rlt= itemView.findViewById(R.id.rlt);
         }
     }
 }

@@ -1,10 +1,13 @@
 package com.example.android.classlist;
 
+import android.app.Activity;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -12,6 +15,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.android.Retrofig2.APIUtils;
@@ -61,6 +65,7 @@ public class ManageAdapter extends RecyclerView.Adapter<ManageAdapter.UserViewHo
     public UserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_post, parent, false);
         return new UserViewHolder(view);
+        
     }
 
     @Override
@@ -74,7 +79,15 @@ public class ManageAdapter extends RecyclerView.Adapter<ManageAdapter.UserViewHo
         holder.tvsubject.setText(room.getSubject());
         holder.tvmoney.setText(room.getFee());
         holder.tvarea.setText(room.getAddress());
-        holder.tvonline.setText(room.getMethod());
+        if(room.getMethod() == "1") {
+            holder.tvonline.setText("Online");
+        }
+        else if(room.getMethod() =="2") {
+            holder.tvonline.setText("Offline");
+        }else {
+            holder.tvonline.setText("Online | Offline");
+        }
+
         holder.id_post.setText(room.getLesson_detail_id());
 
         holder.delete.setOnClickListener(new View.OnClickListener() {
@@ -109,7 +122,14 @@ public class ManageAdapter extends RecyclerView.Adapter<ManageAdapter.UserViewHo
 
             }
         });
+        holder.update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context, "Không Vào được", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
+
 
 
     @Override
@@ -120,9 +140,10 @@ public class ManageAdapter extends RecyclerView.Adapter<ManageAdapter.UserViewHo
         return 0;
     }
 
-    public class UserViewHolder extends RecyclerView.ViewHolder {
+    public class UserViewHolder extends RecyclerView.ViewHolder{
 
         private TextView tvname, tvsubject, tvmoney, tvarea, tvonline,id_post,delete;
+        private Button update;
 
         public UserViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -133,6 +154,7 @@ public class ManageAdapter extends RecyclerView.Adapter<ManageAdapter.UserViewHo
             tvonline = itemView.findViewById(R.id.txtonline);
             id_post = itemView.findViewById(R.id.id_post);
             delete = itemView.findViewById(R.id.delete);
+            update= itemView.findViewById(R.id.btn_update);
         }
     }
 

@@ -357,7 +357,7 @@
             android:layout_height="49dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/button_0"
-            android:text="Đăng bài"
+            android:text="Cập Nhật"
             android:textSize="20dp"
             android:layout_marginBottom="200dp"
             android:textStyle="bold"

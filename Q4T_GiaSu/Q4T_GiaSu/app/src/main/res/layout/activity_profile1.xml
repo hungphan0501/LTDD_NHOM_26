@@ -281,28 +281,6 @@
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
-<!--            <Button-->
-<!--                android:id="@+id/btn_mon2"-->
-<!--                android:layout_width="350dp"-->
-<!--                android:layout_height="60dp"-->
-<!--                android:layout_below="@+id/btn_mon1"-->
-<!--                android:layout_centerInParent="true"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:backgroundTint="#FFC719"-->
-<!--                android:text="Hóa lớp 8"-->
-<!--                android:textColor="#000000" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/btn_mon3"-->
-<!--                android:layout_width="350dp"-->
-<!--                android:layout_height="60dp"-->
-<!--                android:layout_below="@+id/btn_mon2"-->
-<!--                android:layout_centerInParent="true"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:backgroundTint="#4A8594"-->
-<!--                android:text="Văn lớp 8"-->
-<!--                android:textColor="#000000" />-->
-
             <TextView
                 android:id="@+id/ic_ht"
                 android:layout_width="wrap_content"

@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.android.Retrofig2.APIUtils;
 import com.example.android.Retrofig2.DataClient;
+import com.example.android.create.CreateTeacherFragment;
 import com.example.android.get_student;
 import com.example.android.giasu.Fragment_profile;
 import com.example.android.giasu.Login;
@@ -54,11 +55,12 @@ public class Fragment_manage extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_manage, container, false);
         ImageView img_back = v.findViewById(R.id.img_back);
+        ImageView btn_them = v.findViewById(R.id.btn_them);
         rcvRoom = v.findViewById(R.id.rcv_users);
         roomAdapter = new ManageAdapter(roomList, new interfaceListPost() {
             @Override
-            public void onItemClick(my_post room) {
-                replaceFragment4(new DetailPostFragment());
+            public void onItemClick(Room room) {
+                replaceFragment4(new CreateTeacherFragment() );
             }
         });
         rcvRoom.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -69,6 +71,14 @@ public class Fragment_manage extends Fragment {
                 replaceFragment4(new Fragment_profile());
             }
         });
+
+        btn_them.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                replaceFragment4(new CreateTeacherFragment());
+            }
+        });
+
         getRoomList();
         return v;
     }
